@@ -18,16 +18,20 @@ public class TaskEntity {
     @ColumnInfo(name = "priority")
     private int priority;
 
+    @ColumnInfo(name = "dueDate")
+    private long dueDate;
+
     @ColumnInfo(name = "isDone")
     private boolean isDone;
 
     @ColumnInfo(name = "createdAt")
-    private boolean createdAt;
+    private long createdAt;
 
-    public TaskEntity(String title, String description, int priority, boolean isDone, boolean createdAt) {
+    public TaskEntity(String title, String description, int priority,long dueDate, boolean isDone, long createdAt) {
         this.title = title;
         this.description = description;
         this.priority = priority;
+        this.dueDate = dueDate;
         this.isDone = isDone;
         this.createdAt = createdAt;
     }
@@ -72,11 +76,19 @@ public class TaskEntity {
         isDone = done;
     }
 
-    public boolean isCreatedAt() {
+    public long isCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(boolean createdAt) {
+    public void setCreatedAt(long createdAt) {
         this.createdAt = createdAt;
+    }
+
+    public long getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(long dueDate) {
+        this.dueDate = dueDate;
     }
 }
