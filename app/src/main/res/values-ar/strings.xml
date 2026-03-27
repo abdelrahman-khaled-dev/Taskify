@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Taskify</string>
+    <string name="filter_all">الكل</string>
+    <string name="filter_active">النشطة</string>
+    <string name="filter_completed">المكتملة</string>
+    <string name="add_task">مهمة جديدة</string>
+    <string name="edit_task">تعديل المهمة</string>
+    <string name="save_task">حفظ</string>
+    <string name="hint_title">ما الذي يجب فعله؟</string>
+    <string name="hint_description">أضف تفاصيل… (اختياري)</string>
+    <string name="label_priority">الأولوية</string>
+    <string name="priority_low">منخفضة</string>
+    <string name="priority_medium">متوسطة</string>
+    <string name="priority_high">عالية</string>
+    <string name="btn_add_task">إضافة مهمة ←</string>
+    <string name="task_added">تمت إضافة المهمة!</string>
+    <string name="task_updated">تم تحديث المهمة!</string>
+    <string name="error_title_required">العنوان مطلوب</string>
+    <string name="empty_title">لم تخطط لأي شيء بعد!</string>
+    <string name="empty_subtitle">أضف مهمتك الأولى وابدأ يومك بإنتاجية.</string>
+    <string name="get_started">ابدأ الآن ←</string>
+    <string name="action_clear_completed">تم الحذف</string>
+    <string name="section_todos">المهام القادمة</string>
+    <string name="see_all">عرض الكل</string>
+    <string name="greeting">" مرحبا 👋"</string>
+    <string name="app_title">مهامي</string>
+    <string name="created_prefix">أُنشئت في</string>
+    <string name="back">رجوع</string>
+    <string name="label_title">العنوان</string>
+    <string name="label_description">الوصف</string>
+    <string name="label_delete">حذف المهمة</string>
+</resources>

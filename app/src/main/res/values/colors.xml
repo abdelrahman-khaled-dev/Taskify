@@ -7,4 +7,39 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="teal_primary">#2DCCA7</color>
+    <!-- ── Brand / Primary ── -->
+    <color name="teal_dark">#0F6E56</color>
+    <color name="teal_light">#E8FAF5</color>
+    <color name="teal_gradient_end">#1DB8A0</color>
+    <!-- ── Priority ── -->
+    <color name="priority_high">#FF5C6A</color>
+    <color name="priority_high_bg">#FFF0F1</color>
+    <color name="priority_medium">#FFB020</color>
+    <color name="priority_medium_bg">#FFF8EC</color>
+    <color name="priority_low">#2DCCA7</color>
+    <color name="priority_low_bg">#E8FAF5</color>
+    <!-- ── Text ── -->
+    <color name="text_primary">#1A2332</color>
+    <color name="text_secondary">#6B7C93</color>
+    <color name="text_hint">#A8B5C2</color>
+    <!-- ── Surfaces ── -->
+    <color name="white">#FFFFFF</color>
+    <color name="bg_page">#F4F6F9</color>
+    <color name="border_card">#E4EAF0</color>
+    <!-- ── Material theme passthrough ── -->
+    <color name="md_theme_primary">#2DCCA7</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_primaryContainer">#E8FAF5</color>
+    <color name="md_theme_onPrimaryContainer">#0F6E56</color>
+    <color name="md_theme_secondary">#6B7C93</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+    <color name="md_theme_secondaryContainer">#E4EAF0</color>
+    <color name="md_theme_onSecondaryContainer">#1A2332</color>
+    <color name="md_theme_surface">#FFFFFF</color>
+    <color name="md_theme_onSurface">#1A2332</color>
+    <color name="md_theme_background">#F4F6F9</color>
+    <color name="md_theme_onBackground">#1A2332</color>
+    <color name="md_theme_error">#FF5C6A</color>
+    <color name="md_theme_onError">#FFFFFF</color>
 </resources>

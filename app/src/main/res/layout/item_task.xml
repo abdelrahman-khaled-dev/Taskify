@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/white"
+    app:strokeWidth="1dp"
+    app:cardCornerRadius="14dp"
+    android:id="@+id/taskCard"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="64dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/viewPriorityStrip"
+            android:minHeight="64dp"
+            android:background="@color/priority_medium"
+            tools:background="@color/priority_high"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/checkBoxDone"
+                app:buttonTint="@color/teal_primary"
+                android:background="@drawable/selector_checkbox"
+                android:scaleType="fitCenter"
+                android:button="@null"
+                android:layout_marginEnd="12dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/taskTitle"
+                    tools:text="Meeting with Client"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/nunito_bold"
+                    android:maxLines="2"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_primary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/taskDescription"
+                    tools:text="Discuss adding new Features"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/nunito_medium"
+                    android:maxLines="1"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/text_hint"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/createdAt"
+                    tools:text="Created 20 Mars"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/text_hint"
+                    android:textSize="11sp"
+                    android:layout_marginTop="6dp"
+                    android:drawablePadding="4dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="end"
+                android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskPriority"
+                android:background="@drawable/priority_badge_high"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                tools:text="High"
+                android:fontFamily="@font/nunito_extrabold"
+                android:textColor="@color/priority_high"
+                android:textSize="10sp"
+                android:layout_gravity="center_horizontal"/>
+
+                <ImageButton
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_delete_btn"
+                    android:padding="7dp"
+                    app:srcCompat="@drawable/ic_delete"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/label_delete"/>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

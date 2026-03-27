@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_page">
+
+    <!-- ── Header ── -->
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_primary"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="26dp"
+        android:elevation="4dp">
+
+        <!-- Back button -->
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/backBtn"
+                android:layout_gravity="center"
+                android:background="@drawable/back_header"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@android:color/white"
+                android:contentDescription="@string/back"
+                android:layout_marginEnd="14dp"/>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_task"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/nunito_extrabold" />
+
+    </LinearLayout>
+
+    <!-- ── Scrollable body ── -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/content_card"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="28dp"
+            android:paddingBottom="32dp">
+
+            <!-- ── Title field ── -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_title"
+                android:textSize="11sp"
+                android:textColor="@color/text_hint"
+                android:fontFamily="@font/nunito_bold"
+                android:letterSpacing="0.08"
+                android:layout_marginBottom="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilTitle"
+                style="@style/Widget.App.OutlinedField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/hint_title">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:maxLines="2"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_primary"
+                    android:imeOptions="actionNext" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- ── Description field ── -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_description"
+                android:textSize="11sp"
+                android:textColor="@color/text_hint"
+                android:fontFamily="@font/nunito_bold"
+                android:letterSpacing="0.08"
+                android:layout_marginBottom="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.App.OutlinedField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:hint="@string/hint_description">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:minLines="3"
+                    android:maxLines="6"
+                    android:gravity="top|start"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_primary"
+                    android:imeOptions="actionDone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- ── Priority label ── -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_priority"
+                android:textSize="11sp"
+                android:textColor="@color/text_hint"
+                android:fontFamily="@font/nunito_bold"
+                android:letterSpacing="0.08"
+                android:layout_marginBottom="10dp" />
+
+            <!-- ── Segmented Priority ── -->
+            <LinearLayout
+                android:id="@+id/segmentedPriority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/seg_container"
+                android:padding="4dp"
+                android:layout_marginBottom="36dp">
+
+                <!-- HIGH -->
+                <LinearLayout
+                    android:id="@+id/segHigh"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/seg_unsel"
+                    android:layout_marginEnd="2dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/dot_high"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:id="@+id/tvSegHighLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/priority_high"
+                        android:textSize="13sp"
+                        android:textColor="@color/text_secondary"
+                        android:fontFamily="@font/nunito_bold" />
+
+                </LinearLayout>
+
+                <!-- MEDIUM -->
+                <LinearLayout
+                    android:id="@+id/segMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/seg_unsel"
+                    android:layout_marginEnd="2dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/dot_medium"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:id="@+id/tvSegMedLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/priority_medium"
+                        android:textSize="13sp"
+                        android:textColor="@color/text_secondary"
+                        android:fontFamily="@font/nunito_bold" />
+
+                </LinearLayout>
+
+                <!-- LOW -->
+                <LinearLayout
+                    android:id="@+id/segLow"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/seg_unsel"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/dot_low"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:id="@+id/tvSegLowLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/priority_low"
+                        android:textSize="13sp"
+                        android:textColor="@color/text_secondary"
+                        android:fontFamily="@font/nunito_bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- ── Add Task button ── -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="@string/btn_add_task"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/nunito_extrabold"
+                app:backgroundTint="@color/teal_primary"
+                app:cornerRadius="18dp"
+                app:icon="@drawable/ic_add"
+                app:iconTint="@android:color/white"
+                app:iconGravity="textStart"
+                app:iconPadding="10dp"
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

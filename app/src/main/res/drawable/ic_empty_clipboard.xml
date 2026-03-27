@@ -1,0 +1,45 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="52dp"
+    android:height="52dp"
+    android:viewportWidth="52"
+    android:viewportHeight="52">
+
+    <!-- Clipboard body -->
+    <path
+        android:strokeColor="#2DCCA7"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M38,10H32C32,7.79 30.21,6 28,6C25.79,6 24,7.79 24,10H18C15.79,10 14,11.79 14,14V40C14,42.21 15.79,44 18,44H38C40.21,44 42,42.21 42,40V14C42,11.79 40.21,10 38,10Z" />
+
+    <!-- Clip at top -->
+    <path
+        android:strokeColor="#2DCCA7"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M24,10H32V14H24V10Z" />
+
+    <!-- Line 1 -->
+    <line
+        android:x1="20" android:y1="22"
+        android:x2="36" android:y2="22"
+        android:strokeColor="#2DCCA7"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+
+    <!-- Line 2 -->
+    <line
+        android:x1="20" android:y1="28"
+        android:x2="36" android:y2="28"
+        android:strokeColor="#2DCCA7"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+
+    <!-- Line 3 (shorter) -->
+    <line
+        android:x1="20" android:y1="34"
+        android:x2="30" android:y2="34"
+        android:strokeColor="#2DCCA7"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+
+</vector>

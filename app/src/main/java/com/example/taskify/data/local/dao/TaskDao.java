@@ -29,6 +29,6 @@ public interface TaskDao {
     TaskEntity getTaskById(int taskId);
 
     @Query("SELECT * FROM tasks WHERE isDone = 1")
-    LiveData<List<TaskEntity>> getCompleatedTask();
+    LiveData<List<TaskEntity>> getCompleatedTasks();
 
 }

@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Taskify</string>
+    <string name="filter_all">All</string>
+    <string name="filter_active">Active</string>
+    <string name="filter_completed">Completed</string>
+    <string name="add_task">New Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="save_task">Save</string>
+    <string name="hint_title">What needs to be done?</string>
+    <string name="hint_description">Add more details… (optional)</string>
+    <string name="label_priority">PRIORITY</string>
+    <string name="priority_low">Low</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_high">High</string>
+    <string name="btn_add_task">Add Task</string>
+    <string name="task_added">Task added!</string>
+    <string name="task_updated">Task updated!</string>
+    <string name="error_title_required">Title is required</string>
+    <string name="empty_title">You haven\'t planned\nanything yet!</string>
+    <string name="empty_subtitle">Add your first task and start\nbeing productive today.</string>
+    <string name="get_started">Get Started →</string>
+    <string name="action_clear_completed">Clear Completed</string>
+    <string name="section_todos">Upcoming To-do\'s</string>
+    <string name="see_all">See all</string>
+    <string name="greeting">Heloo 👋</string>
+    <string name="app_title">My Tasks</string>
+    <string name="created_prefix">Created</string>
+    <string name="back">Back</string>
+    <string name="label_title">Title</string>
+    <string name="label_description">Description</string>
+    <string name="label_delete">Delete Task</string>
 </resources>
